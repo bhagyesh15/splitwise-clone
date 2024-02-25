@@ -52,15 +52,6 @@ router.delete('/expenses/:id',deleteUserExpense);
 
 // /register
 // /login
-// /expense/new
-// /expense/update
-// /expense/delete
-// /group/create
-// /group/update
-// /connection
-
-// /getExpensesForGroup
-// /getUserExpenses
 
 
 module.exports= router;

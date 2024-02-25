@@ -14,7 +14,7 @@ app.use(cors());
 
 // Pick up React index.html file
 // this.app.use(
-//     express.static(path.join(__dirname, "../client/build"))
+//     express.static(path.join(__dirname, "../src/build"))
 //   );
 
 mongoose
