@@ -1,0 +1,31 @@
+.welcomePage{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    height: 100vh;    
+    width: 100%;
+}
+
+.welcomeMessage{
+    
+    display: grid;
+    align-items: center;
+}
+
+.welcomeCard{
+    display: grid;
+    align-items: center;
+    /* border: black; */
+    border-color: black;
+    border-width: 1px;
+    padding: 4%;
+    margin: auto 0;
+    border-radius: 25px;
+}
+
+.bodyInput{
+    padding: 1% 0;
+    white-space: nowrap;
+}
+
+/* align-content: center; flex justify-evenly p-8 m-8*/
