@@ -93,9 +93,9 @@ export default function Register(props) {
             return
         }
 
-        // props.handleRegister(userRegisterData)
+        props.handleRegister(userRegisterData)
 
-        navigate('/home')
+        // navigate('/home')
         // Authentication calls will be made here...
     }
 
