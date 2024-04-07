@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sectionTitle {
+    @apply py-2 font-extrabold text-xl
+}
+
+
+

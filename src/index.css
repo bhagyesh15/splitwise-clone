@@ -6,13 +6,22 @@
   .btn-primary {
     @apply py-2 px-5 bg-p-color text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
   }
+
+  .table-heading{
+    @apply px-4 py-1 hover:bg-indigo-100 hover:cursor-pointer active:bg-indigo-200
+  }
+}
+
+.appjs{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,6 +41,10 @@ body {
 .primary-button:hover{
   background-color: #199891;
   color: white;
+}
+
+.mainComponent{
+  margin: 5% 0%
 }
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

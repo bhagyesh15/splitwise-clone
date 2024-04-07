@@ -66,7 +66,7 @@ module.exports.getUser = async (req, res) => {
 
 //register
 module.exports.createUser = async (req, res) => {
-    const { name, password, email, phone } = req.body
+    const { name, password, email, phone, totalOwes } = req.body
     console.log(req.body)
     try {
         const userCheck = await UserModel.find({
@@ -78,7 +78,13 @@ module.exports.createUser = async (req, res) => {
             })
             return
         }
-        const users = await UserModel.create({ name, password, email, phone })
+        const users = await UserModel.create({
+            name,
+            password,
+            email,
+            phone,
+            totalOwes,
+        })
         console.log('-----createUser succesful')
         res.send(users)
     } catch (error) {
@@ -89,15 +95,12 @@ module.exports.createUser = async (req, res) => {
 
 module.exports.updateUser = async (req, res) => {
     const { id } = req.params
-    const { name, password, email, phone } = req.body
+    // const { name, password, email, phone } = req.body
     console.log(req.params)
     console.log(req.body)
     try {
         const user = await UserModel.findByIdAndUpdate(id, {
-            name,
-            password,
-            email,
-            phone,
+            ...req.body,
         })
         console.log('-----updateUser succesful')
         console.log(user)

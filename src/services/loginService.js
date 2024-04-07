@@ -19,8 +19,10 @@ export const doPostLogin = async (userData) => {
             return response
         })
         .catch((err) => {
-            console.log(err.response)
+            console.log('err')
+            console.log(err)
             return err.response
+            //need to handle ERR_CONNECTION_REFUSED
         })
     return result
 }
